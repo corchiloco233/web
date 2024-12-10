@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frenos: Información y Componentes</title>
+    <style>
+        body {
+            background-image: url('https://www.teahub.io/photos/full/365-3657277_mechanical-system-fondo-de-pantalla-mecanica-automotriz.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+            overflow: hidden; /* Elimina la barra de desplazamiento global */
+        }
+        
+        /* Estilo para la portada */
+        .portada {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        
+        .portada h1 {
+            font-size: 4rem;
+            color: #fff;
+            text-align: center;
+            text-shadow: 3px 3px 5px #000;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh; /* Toma todo el alto de la ventana */
+            overflow: hidden; /* Elimina la barra de desplazamiento horizontal */
+        }
+
+        .sidebar {
+            width: 30%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            overflow-y: auto;
+            position: relative;
+            z-index: 5;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .content {
+            width: 70%;
+            padding: 20px;
+            overflow-y: auto;
+            background: rgba(0, 0, 0, 0.7);
+            height: 100vh;
+            box-sizing: border-box;
+            padding-top: 0;
+            z-index: 4;
+        }
+
+        .content h2 {
+            margin-top: 50px;
+        }
+
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .video {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .video iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Portada con el título  -->
+    <div class="portada" id="portada">
+        <h1>PROYECTO AULA:
+	 EXPLICACION DE LAS FALLAS EN LOS SISTEMAS DE FRENOS EN VEHICULOS LIGEROS</h1>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Temas</h3>
+            <a href="#que-son-los-frenos">¿Qué son los frenos?</a>
+            <a href="#importancia">Importancia de los frenos</a>
+            <a href="#tipos">Tipos de frenos</a>
+            <a href="#partes">Partes principales</a>
+            <a href="#historia">Historia de los frenos</a>
+            <a href="#mantenimiento">Mantenimiento recomendado</a>
+            <a href="#datos-utiles">Datos útiles adicionales</a>
+            <a href="#video">Video explicativo</a>
+        </div>
+        <div class="content">
+            <h1 id="que-son-los-frenos">¿Qué son los frenos?</h1>
+            <p>Los frenos son un componente esencial en los automóviles, diseñados para controlar la velocidad, detener el vehículo y garantizar la seguridad de los ocupantes. Su funcionamiento transforma la energía cinética del vehículo en energía térmica mediante fricción.</p>
+
+            <h2 id="importancia">Importancia de los frenos</h2>
+            <ul>
+                <li>Seguridad: Permiten detener el vehículo de manera controlada, previniendo accidentes.</li>
+                <li>Control del vehículo: Ayudan en maniobras específicas como curvas o descensos.</li>
+                <li>Adaptación al terreno: Brindan estabilidad en caminos resbaladizos o pendientes.</li>
+            </ul>
+
+            <h2 id="tipos">Tipos de frenos</h2>
+            <h3>Frenos de tambor</h3>
+            <p>Funcionamiento: Zapatas presionan un tambor para generar fricción.</p>
+            <p>Ventajas: Bajo costo, buen desempeño en condiciones normales.</p>
+            <p>Desventajas: Se calientan rápidamente y son más difíciles de mantener.</p>
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.f7YnSKkr1exU3ZSBPUgvzQHaEk?rs=1&pid=ImgDetMain" alt="Frenos de tambor">
+            </div>
+
+            <h3>Frenos de disco</h3>
+            <p>Funcionamiento: Pastillas presionan un disco metálico para detener el vehículo.</p>
+            <p>Ventajas: Eficiencia y mejor disipación de calor.</p>
+            <p>Desventajas: Costo más alto y mayor susceptibilidad a la suciedad.</p>
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.FOmoqVAQs64R-AhxHIlP6QHaE-?rs=1&pid=ImgDetMain" alt="Frenos de disco">
+            </div>
+
+            <h2 id="partes">Partes principales de los sistemas de frenos</h2>
+            <ul>
+                <li>Sistema de tambor: Tambor, zapatas, cilindro de rueda, resortes de retorno y placa de soporte.</li>
+                <li>Sistema de disco: Disco, pastillas, caliper y cilindro hidráulico.</li>
+                <li>Componentes comunes:
+                    <ul>
+                        <li>Pedal de freno.</li>
+                        <li>Líquido de frenos.</li>
+                        <li>Cilindro maestro.</li>
+                        <li>Líneas hidráulicas.</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="image">
+                <img src="https://electroautocangas.es/web2020/wp-content/uploads/2021/07/liquido-frenos-1-scaled.jpg" alt="Líquido de frenos">
+            </div>
+
+            <h2 id="historia">Historia de los frenos</h2>
+            <ul>
+                <li>Frenos mecánicos (siglo XIX): Usados en los primeros vehículos.</li>
+                <li>Frenos de tambor (1902): Introducción por Louis Renault.</li>
+                <li>Frenos hidráulicos (1920): Mayor eficiencia y menos esfuerzo.</li>
+                <li>Frenos de disco (1950-60): Adaptados primero en autos deportivos.</li>
+                <li>Frenos ABS (1978): Incremento en seguridad.</li>
+                <li>Frenos regenerativos (2000 en adelante): Tecnología clave para vehículos eléctricos.</li>
+            </ul>
+
+            <h2 id="mantenimiento">Mantenimiento recomendado</h2>
+            <ul>
+                <li>Revisión de pastillas y zapatas cada 10,000-20,000 km.</li>
+                <li>Sustitución del líquido de frenos cada 2 años.</li>
+                <li>Limpieza periódica de los componentes.</li>
+            </ul>
+
+            <h2 id="datos-utiles">Datos útiles adicionales</h2>
+            <h3>Signos de desgaste</h3>
+            <ul>
+                <li>Ruidos chirriantes.</li>
+                <li>Vibraciones al frenar.</li>
+                <li>Distancias de frenado más largas.</li>
+            </ul>
+            <div class="image">
+                <img src="https://thumbs.dreamstime.com/b/discos-antiguos-de-freno-desgastados-que-necesitan-ser-reemplazados-urgentemente-por-ai-generativo-271979615.jpg" alt="Signos de desgaste">
+            </div>
+
+            <h3>Reparaciones frecuentes</h3>
+            <ul>
+                <li>Sustitución de pastillas y discos de freno.</li>
+                <li>Reparación de líneas hidráulicas por fugas.</li>
+                <li>Cambio del cilindro maestro si hay pérdida de presión.</li>
+            </ul>
+
+            <h3>Consejos para extender la vida útil</h3>
+            <ul>
+                <li>Evitar frenadas bruscas innecesarias.</li>
+                <li>Realizar mantenimiento regular según las indicaciones del fabricante.</li>
+                <li>Utilizar repuestos de calidad comprobada.</li>
+            </ul>
+
+            <h2 id="video">Video explicativo</h2>
+            <div class="video">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/MfiEpqxSiW4?si=GGZ5NbD5gqIZMX9C" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Esperar 5 segundos y luego ocultar la portada
+        setTimeout(function() {
+            document.getElementById("portada").style.display = "none";
+        }, 5000); // 5000 ms = 5 segundos
+    </script>
+</body>
+</html>
+
